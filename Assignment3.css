@@ -1,0 +1,69 @@
+h1 {
+    color: red;
+    background-color: black;
+}
+
+h2 {
+    color: maroon;
+    background-color: beige;
+}
+
+h3 {
+    color: darkred;
+    background-color: darkgrey;
+}
+
+#standard {
+    color: gray;
+    background-color: darkslategray;
+}
+
+.spanstyle {
+    color: firebrick;
+    background-color: dimgray;
+}
+
+#home:link {
+    color: red;
+}
+
+#stuff:link {
+    color: red;
+}
+
+#class:link {
+    color: red;
+}
+
+#home:visited {
+    color: green;
+}
+
+#stuff:visited {
+    color: green;
+}
+
+#class:visited {
+    color: green;
+}
+
+#home:hover {
+    color: yellow;
+}
+
+#stuff:hover {
+    color: yellow;
+}
+
+#class:hover {
+    color: yellow;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+    
