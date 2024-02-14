@@ -1,0 +1,49 @@
+h1 {
+color: white;
+}
+
+#PS {
+    background-color: cornflowerblue;
+}
+
+h2 {
+color: blue;
+}
+
+#doc {
+    color: darkorange;
+}
+
+h3 {
+    background-color: yellow;
+}
+
+#taxi {
+    color: red;
+}
+
+h4 {
+    color: yellow;
+    background-color: seagreen;
+}
+
+#art {
+    background-color: lime;
+}
+
+h5 {
+    color: red;
+}
+
+#daughter {
+    background-color: yellow;
+}
+
+#ME {
+    color: blue;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
