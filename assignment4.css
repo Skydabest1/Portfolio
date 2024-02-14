@@ -1,0 +1,129 @@
+h1 {
+    color: orange;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h2 {
+    color: orange;
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+    color: orange;
+    background-color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#standard {
+    color: gray;
+    background-color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.spanstyle {
+    color: firebrick;
+    background-color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home:link {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#stuff:link {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#class:link {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home:visited {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#stuff:visited {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#class:visited {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home:hover {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#stuff:hover {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#class:hover {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    
+  .font {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  ul {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .history {
+    text-align: center;
+  }
+
+  .egg {
+    text-align: justify;
+  }
+
+.pic {
+    border: 20px solid black;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: yellow;
+  }
+
+  body {
+    background-color: gray;
+    background-image: url(IMG_1226.jpeg);
+    height: min-content;
+    width: min-content;
+    background-size: auto;
+  }
