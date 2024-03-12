@@ -1,0 +1,150 @@
+footer {
+    color: black;
+    display: block;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 5px solid;
+    border-color: darkblue;
+    padding: 5px;
+
+    grid-column: span 12;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    border-bottom: 5px solid darkblue;
+    padding: 15px;
+    background: linear-gradient(to bottom, #33ccff 0%, darkblue 100%);
+    color: lightblue;
+    grid-column: span 12;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+}
+
+h1 a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: white;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    border-bottom: solid 3px darkblue;
+    padding-bottom: 10px;
+    grid-column: span 9;
+    margin: 15px;
+color: darkblue;
+}
+
+nav {
+    grid-column: span 12;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to bottom, #33ccff 0%, darkblue 100%);
+}
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+ width: 200px;   
+ background: linear-gradient(to bottom, #33ccff 0%, darkblue 100%);
+ padding: 0px;
+ display: inline-block;
+ text-align: justify;
+ border-right: 5px solid darkblue;
+ grid-column: span 12;
+ margin: 0;
+}
+
+nav li a {
+    color: lightblue;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin: 0;
+}
+
+nav li a:hover {
+color: white;
+}
+
+#wrapper {
+    margin: 1em auto;
+    padding: 0;
+    width: 960px;
+    border: 5px solid darkblue;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+  }
+
+body {
+    background-color: gray;
+}
+
+
+main {
+    grid-column: span 8;
+}
+
+main p {
+    margin: 15px;
+}
+
+p a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: darkred;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main img {
+    width: 250px;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border: solid darkblue 3px;
+  }
+
+  aside {
+    grid-column: span 4;
+    background-color: skyblue;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+aside h2 {
+    padding-bottom: 10px;
+}
+
+  aside p {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+#italics {
+    font-style: italic;
+}
+
