@@ -57,57 +57,64 @@ h1:after{
   border-bottom: 5px solid black;
 }
 
-#mainimg {
-  grid-column: span 5;
-  width: 100%;
-  padding-top: 75px;
-}
-
-
 nav {
-grid-column-end: 7;
-grid-column-start: 2;
-  font-size: 56px;
-  padding-top: 75px;
-  font-family: 'Major Mono Display';
-}
+  grid-column-end: 7;
+  grid-column-start: 2;
+    font-size: 45px;
+    padding-top: 75px;
+    font-family: 'Major Mono Display';
+  }
+  
+  nav ul {
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    background-color: #747474;
+    color: white;
+  }
+  
+  nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    height: 75px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    background-color: darkred;
+    width: 436px;
+    color: white;
+    transition: background-color 1.0s, width 2.0s, color 2.0s;
+  }
+  
+  nav a:hover {
+    background-color: red;
+    box-shadow: 10px 10px 10px #999; /* x, y, blur, color */
+    color: black;
+  }
 
-nav ul {
-  margin: 0; 
-  padding: 0;
-  list-style: none;
-}
+  #mainimg {
+    width: 100%;
+    grid-column: span 5;
+    padding-top: 75px;
+  }
 
-nav li {
-  background-color: #747474;
-  color: white;
-}
-
-nav li a {
-  color: white;
+main img {
+  height: 100%;
+  width: 100%;
   display: block;
-  text-decoration: none;
-  padding: 25px;
-  height: 75px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-nav a {
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  background-color: darkred;
-  width: 436px;
-  color: white;
-  transition: background-color 1.0s, width 2.0s, color 2.0s;
-}
-
-nav a:hover {
-  background-color: red;
-  box-shadow: 10px 10px 10px #999; /* x, y, blur, color */
-  color: black;
-}
+  grid-column-start: 2;
+  grid-column-end: 7;
+  }
 
 main {
   grid-column: span 12;
@@ -115,14 +122,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-main img {
-height: 100%;
-display: block;
-}
 
-main img:hover{
-  box-shadow: 10px 10px 10px #999; /* x, y, blur, color */
-}
 
 iframe {
   grid-column: span 12;
