@@ -61,19 +61,20 @@ body {
   }
   
   nav {
-        
+    align-items: center;
+    grid-row-gap: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-      font-size: 56px;
+      font-size: 60px;
       padding-top: 75px;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Major Mono Display';
       text-decoration: none;
     }
 
     nav i {
         grid-column: span 2;
         display: block;
-     font-size: 100px;
+     font-size: 125px;
     }
     
     nav li {
@@ -95,12 +96,12 @@ body {
     
     nav a {
       display: block;
-margin-left: 130px;
-      width: 436px;
+margin-left: 90px;
+      width: 650px;
       color: black;
       text-decoration: none;
       grid-column: span 1;
-      margin-top: 20px;
+  
     }
     
     nav a:hover {
@@ -111,16 +112,25 @@ margin-left: 130px;
     nav i {
         text-decoration: none;
         grid-column: span 1;
-        margin-left: 350px;
-        padding-bottom: 50px;
+        margin-left: 270px;
+    
     }
   
     nav form {
-        margin-left: 130px;
+        margin-left: 90px;
     }
    
+    footer a i {
+        float: right;
+        padding-right: 10px;
+        color: white;
+        margin-bottom: 20px;
+        padding-bottom: 50px;
+        font-size: 50px;
+        position: relative; bottom: 0px;
+      }
+
   footer {
-   display: block;
   grid-column: span 12;
   background-image: url(Footer.png);
   height: 247px;
@@ -130,16 +140,16 @@ margin-left: 130px;
   }
   
   footer a {
-    display: block;
     padding-left: 10px;
-  
     font-size: 50px;
     font-family: 'Major Mono Display';
     color: white;
+    margin-top: 300px;
+position: relative; top: 190px;
   }
   
   footer a:link{
-    padding-top: 175px;
+
     color: white;
     text-decoration: none;
   }
@@ -148,12 +158,3 @@ margin-left: 130px;
     color: white;
   }
   
-  footer i {
-    float: right;
-    padding-right: 10px;
-    color: white;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
-    font-size: 50px;
-    position: relative; bottom: 45px;
-  }
