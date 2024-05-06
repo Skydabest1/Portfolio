@@ -93,7 +93,7 @@ body {
 }
 
 main p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poiret One';
     font-size: 24px;
 padding-right: 24px;
     margin-top: 100px;
@@ -107,18 +107,6 @@ text-align: center;
     grid-column: span 12;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  
-  
-  
-  iframe {
-    grid-column: span 12;
-    grid-column-start: 3;
-    grid-column-end: 11;
-    align-content: center;
-    margin-top: 10px;
-    padding-top: 24px;
-    border: none;
   }
   
   footer a i {
