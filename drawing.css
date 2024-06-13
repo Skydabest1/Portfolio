@@ -97,7 +97,7 @@ body {
     margin: 0;
     
 
-.Bnw {
+.persona {
     display: block;
     grid-column: span 1;
     width: 510px;
@@ -105,7 +105,7 @@ body {
     margin: 0;
   
 
-.Orc {
+.guitar {
     display: block;
     grid-column: span 1;
     width: 510px;
