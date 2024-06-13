@@ -92,6 +92,30 @@ body {
     padding: 0;
 }
 
+.Frog {
+    display: block;
+    grid-column: span 1;
+    width: 510px;
+    height: 660px;  
+    margin: 0;
+    padding-left: 90px;
+
+.BnW {
+    display: block;
+    grid-column: span 1;
+    width: 510px;
+    height: 660px;  
+    margin: 0;
+    padding-left: 90px;
+
+.Orc {
+    display: block;
+    grid-column: span 1;
+    width: 510px;
+    height: 660px;  
+    margin: 0;
+    padding-left: 90px;
+
 main p {
     font-family: 'Poiret One';
     font-size: 24px;
