@@ -92,8 +92,8 @@ body {
 .Frog {
     display: block;
     grid-column: span 1;
-    width: 660px;
-    height: 510px;  
+    width: 530px;
+    height: 410px;  
     margin: 0;
 }
 
