@@ -12,7 +12,6 @@ body {
     grid-column-gap: 24px;
     }
 
-  
   @font-face {
     font-family: 'Major Mono Display';
     src: url(MajorMonoDisplay-Regular.ttf);
