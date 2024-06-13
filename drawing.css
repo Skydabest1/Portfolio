@@ -95,7 +95,7 @@ body {
     width: 660px;
     height: 510px;  
     margin: 0;
-    
+}
 
 .persona {
     display: block;
@@ -103,7 +103,7 @@ body {
     width: 510px;
     height: 660px;  
     margin: 0;
-  
+}
 
 .guitar {
     display: block;
@@ -111,6 +111,7 @@ body {
     width: 510px;
     height: 660px;  
     margin: 0;
+}
  
 
 main p {
