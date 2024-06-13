@@ -113,6 +113,13 @@ body {
     margin: 0;
 }
  
+img {
+      display: block;
+    grid-column: span 1;
+    width: 510px;
+    height: 660px;  
+    margin: 0;
+}
 
 main p {
     font-family: 'Poiret One';
