@@ -77,7 +77,7 @@ body {
     width: 510px;
     height: 660px;  
     margin: 0;
-    padding-left: 90px;
+   
 }
   
 .Gojo {
@@ -95,6 +95,7 @@ body {
     width: 600px;
     height: 450px;  
     margin: 0;
+    padding-right: 60px;
 }
 
 .persona {
@@ -139,6 +140,7 @@ padding-right: 24px;
     padding-left: 24px;
 display: block;
 text-align: center;
+margin-right: 60px;
   }  
 
   main {
