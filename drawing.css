@@ -117,8 +117,8 @@ body {
 .grave {
     display: block;
     grid-column: span 1;
-    width: 510px;
-    height: 660px;  
+    width: 660px;
+    height: 510px;  
     margin: 0;
 }
  
