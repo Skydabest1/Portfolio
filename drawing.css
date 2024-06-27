@@ -111,7 +111,7 @@ body {
     width: 510px;
     height: 660px;  
     margin: 0;
-    margin-right: 90px;
+    padding-left: 90px;
 }
 
 .grave {
@@ -125,8 +125,8 @@ body {
 img {
       display: block;
     grid-column: span 1;
-    width: 510px;
-    height: 660px;  
+    width: 450px;
+    height: 600px;  
     margin: 0;
 }
 
