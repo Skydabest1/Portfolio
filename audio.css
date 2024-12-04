@@ -11,7 +11,11 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 24px;
     }
-
+  /* style for dummy columns, delete and replace with your own CSS */
+  .dummycolumn {
+    background-color: rgba(255,0,0,.25);
+    grid-column: span 1;
+  }
   
   @font-face {
     font-family: 'Major Mono Display';
@@ -33,6 +37,7 @@ body {
     padding-top: 50px;
     text-decoration: none;
   font-family: 'Major Mono Display';
+  margin-bottom: 24px;
   }
   
   h1 a:link{
@@ -52,62 +57,33 @@ body {
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-bottom: 5px solid black;
   }
-
+  
   h2 {
     font-family: 'Major Mono Display';
     text-align: center;
     font-size: 60px;
     display: block;
     grid-column: span 12;
-    margin-top: 12px;
-    margin-bottom: 4px;
+margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  main {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 69px;
   }
   
-main p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-padding-right: 24px;
-    grid-column: span 12;
-    padding-left: 24px;
-text-align: center;
-  }  
-
-main {
-    grid-column: span 12;
-    text-align: center;
-}
-
-main img {
-    align-content: center;
-    grid-column: span 12;
-}
-
-p {
-    grid-column: span 12;
-    text-align: center;
-    font-size: 24px;
-
-}
-
-#MainF {
-    height: 384px;
-    width: 384px;
-    align-content: center;
-}  
-
-#DrawingF {
-    height: 384px;
-    width: 384px;
-    align-content: center;
-}  
+  iframe {
+grid-column: span 1fr;
+display: block;
+margin: auto;
+padding-top: 48px;
+    border: none;
+  }
   
-#ContactF {
-    height: 384px;
-    width: 384px;
-    align-content: center;
-}  
-
-footer a i {
+  footer a i {
     float: right;
     padding-right: 10px;
     color: white;
@@ -116,30 +92,31 @@ footer a i {
     font-size: 50px;
     position: relative; bottom: 0px;
   }
-  
-  footer {
-  grid-column: span 12;
-  background-image: url(Footer.png);
-  height: 247px;
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-  }
-  
-  footer a {
-  padding-left: 10px;
-  font-size: 50px;
-  font-family: 'Major Mono Display';
-  color: white;
-  margin-top: 300px;
-  position: relative; top: 190px;
-  }
-  
-  footer a:link{
-  color: white;
-  text-decoration: none;
-  }
-  
-  footer a:visited {
-  color: white;
-  }
+
+footer {
+grid-column: span 12;
+background-image: url(Footer.png);
+height: 247px;
+margin: 0;
+padding: 0;
+width: 1200px;
+}
+
+footer a {
+padding-left: 10px;
+font-size: 50px;
+font-family: 'Major Mono Display';
+color: white;
+margin-top: 300px;
+position: relative; top: 190px;
+}
+
+footer a:link{
+
+color: white;
+text-decoration: none;
+}
+
+footer a:visited {
+color: white;
+}
