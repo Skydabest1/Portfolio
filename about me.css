@@ -65,12 +65,12 @@ margin-left: 100px;
   }
   
   p {
-    font-family: 'Poiret One';
+    font-family: 'DecoFex BB';
     font-size: 24px;
 padding-right: 24px;
-    margin-top: 90px;
-    grid-column: span 5;
-    padding-left: 24px;
+    margin-top: 20px;
+    grid-column: span 7;
+    padding-left: 12px;
     text-align: center;
   }
   
@@ -86,10 +86,11 @@ padding-right: 24px;
   }
   
   #myCarousel {
-    height: 95%;
-  grid-column-end: 7;
-    grid-column-start: 2;
-    margin-top: 48px;
+    height: 600px;
+  grid-column-end: 6;
+    grid-column-start: 1;
+    margin-top: 20px;
+    padding-left: 45px;
   }
   
   #myCarousel .f-carousel__slide {
