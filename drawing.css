@@ -54,7 +54,7 @@ body {
   }
 
   h2 {
-    font-family: 'Major Mono Display';
+    font-family: 'Jura';
     text-align: center;
     font-size: 60px;
     display: block;
@@ -93,8 +93,8 @@ body {
 .title {
   display: block;
   grid-column: span 1;
-  width: 600px;
-  height: 336.88px;  
+  width: 570px;
+  height: 319.2px;  
   margin: 0;
  
 }
@@ -102,26 +102,26 @@ body {
 .bar {
   display: block;
   grid-column: span 1;
-  width: 600px;
-  height: 336.88px;  
+  width: 570px;
+  height: 319.2px;  
   margin: 0;
-
+  padding-left: 3px;
 }
 
 .Park {
   display: block;
   grid-column: span 1;
-  width: 600px;
-  height: 336.88px;  
+  width: 570px;
+  height: 319.2px;  
   margin: 0;
-
+  padding-left: 3px;
 }
 
 .City {
   display: block;
   grid-column: span 1;
-  width: 600px;
-  height: 336.88px;  
+  width: 570px;
+  height: 319.2px;  
   margin: 0;
 
 }
@@ -192,14 +192,187 @@ body {
 .background {
   display: block;
   grid-column: span 1;
-  width: 600px;
-  height: 336.88px;  
+  width: 570px;
+  height: 319.2px;  
   margin: 0;
-  padding-top: 250px;
+  padding-top: 300px;
+  padding-left: 3px;
+}
+
+.tass3 {
+  display: block;
+  grid-column: span 1;
+  width: 627px;
+  height: 484.5px;  
+  margin: 0;
+  padding-top: 175px;
+}
+
+.ass3 {
+  display: block;
+  grid-column: span 1;
+  width: 570.37px;
+  height: 770px;  
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 4px;
+}
+
+.tass4 {
+  display: block;
+  grid-column: span 1;
+  width: 561px;
+  height: 433.5px;  
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+.ass4 {
+  display: block;
+  grid-column: span 1;
+  width: 561px;
+  height: 433.5px;  
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 12px;
+}
+
+.gojo {
+  display: block;
+  grid-column: span 1;
+  width: 608px;
+  height: 342.38px;  
+  margin: 0;
+  padding-top: 200px;
+}
+
+.toji {
+  display: block;
+  grid-column: span 1;
+  width: 571.2px;
+  height: 321.64px;  
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 2px;
+}
+
+.pokemon {
+  display: block;
+  grid-column: span 1;
+  width: 570.37px;
+  height: 770px;  
+  margin: 0;
+  padding-top: 30px;
+}
+
+.sukuna {
+  display: block;
+  grid-column: span 1;
+  width: 570.37px;
+  height: 770px;  
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 3px;
+}
+
+.arm {
+  display: block;
+  grid-column: span 1;
+  width: 594px;
+  height: 918px;  
+  margin: 0;
+  padding-top: 50px;
+}
+
+.bois {
+  display: block;
+  grid-column: span 1;
+  width: 614.4px;
+  height: 283.8px;  
+  margin: 0;
+  padding-top: 50px;
+}
+
+.frog {
+  display: block;
+  grid-column: span 1;
+  width: 561px;
+  height: 433.5px;  
+  margin: 0;
+  padding-top: 50px;
+}
+
+.persona {
+  display: block;
+  grid-column: span 1;
+  height: 561px;
+  width: 433.5px;  
+  margin: 0;
+  padding-top: 50px;
+}
+
+.astarion {
+  display: block;
+  grid-column: span 1;
+  height: 597px;
+  width: 526px;  
+  margin: 0;
+  padding-top: 50px;
+}
+
+.f-carousel {
+  max-width: 600px; /* Set a maximum width for the carousel */
+  margin: 20px auto; /* Center the carousel horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for styling */
+  border-radius: 10px; /* Optional: Rounded corners */
+  overflow: hidden; /* Hide overflowing content */
+  text-align: center; /* Center align content if needed */
+display: block;
+grid-column: span 2;
+}
+
+/* Optional: Styling for carousel images */
+.f-carousel__slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* Matching the border radius of the carousel */
+}
+
+/* Optional: Custom navigation styles if needed */
+.f-carousel__nav {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+/* Optional: Adjust navigation button size */
+.f-carousel__button--prev,
+.f-carousel__button--next {
+  width: 40px;
+  height: 40px;
+}
+
+/* Optional: Add transition effect for smooth image appearance */
+.f-carousel__slide {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.comics {
+  font-family: 'Jura';
+  font-size: 24px;
+padding-right: 45px;
+  margin-top: 30px;
+  grid-column: span 2;
+  padding-left: 24px;
+display: block;
+text-align: center;
 }
 
 .jam {
-  font-family: 'DecoFex BB';
+  font-family: 'Jura';
   font-size: 24px;
 padding-right: 24px;
   margin-top: 30px;
@@ -209,10 +382,14 @@ display: block;
 text-align: center;
 }
 
+.second {
+  padding-left: 70px;
+}
+
 main p {
   font-family: 'Jura';
     font-size: 24px;
-padding-right: 24px;
+padding-right: 54px;
     margin-top: 100px;
     grid-column: span 1;
     padding-left: 24px;
