@@ -1,172 +1,222 @@
+/* MOBILE-FIRST BASELINE STYLES */
 body {
   background-image: url(lowpoly-grey-gradient-vector.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
 }
 
 #wrapper {
-  margin: 24px auto;
-  width: 1200px;
-  padding: 0px;
-  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 24px;
-  }
-/* style for dummy columns, delete and replace with your own CSS */
-.dummycolumn {
-  background-color: rgba(255,0,0,.25);
-  grid-column: span 1;
-}
-
-@font-face {
+  grid-template-columns: 1fr;
+  background-color: #9f9f9f; /* Fallback color */
   font-family: 'Major Mono Display';
-  src: url(MajorMonoDisplay-Regular.ttf);
+  color: white;
 }
 
 header {
-  grid-column: span 12;
   background-image: url(Header.png);
   background-repeat: no-repeat;
-  height: 247px;
+  background-size: cover;
+  height: 200px;
+  grid-column: span 1;
 }
 
 h1 {
-  grid-column-start: 2;
-  grid-column-end: 12;
   text-align: center;
-  font-size: 96px;
-  padding-top: 50px;
-  text-decoration: none;
-font-family: 'Major Mono Display';
+  font-size: 2rem;
+  padding-top: 1rem;
+  font-family: 'Major Mono Display';
 }
 
-h1 a:link{
-  color: black;
-  text-decoration: none;
-}
-
+h1 a:link,
 h1 a:visited {
   color: black;
+  text-decoration: none;
 }
 
-h1:after{
-  content: ""; /* This is necessary for the pseudo element to work. */ 
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 975px; /* Change this to whatever width you want. */
-  padding-top: 20px; /* This creates some space between the element and the border. */
-  border-bottom: 5px solid black;
+h1:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 1rem;
+  border-bottom: 3px solid black;
 }
 
 nav {
-  grid-column-end: 7;
-  grid-column-start: 2;
-    font-size: 45px;
-    padding-top: 75px;
-    font-family: 'Major Mono Display';
-  }
-  
-  nav ul {
-    margin: 0; 
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
-    background-color: #747474;
-    color: white;
-  }
-  
-  nav li a {
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 25px;
-    height: 55px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
-  nav a {
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    background-color: darkred;
-    width: 436px;
-    color: white;
-    transition: background-color 1.0s, width 2.0s, color 2.0s;
-  }
-  
-  nav a:hover {
-    background-color: red;
-    box-shadow: 10px 10px 10px #999; /* x, y, blur, color */
-    color: black;
-  }
-
-  #mainimg {
-    width: 100%;
-    grid-column: span 5;
-    padding-top: 75px;
-  }
-
-main img {
-  height: 100%;
-  width: 100%;
-  display: block;
-  grid-column-start: 2;
-  grid-column-end: 7;
-  }
-
-main {
-  grid-column: span 12;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: span 1;
+  font-size: 1.5rem;
+  margin-top: 0rem; /* moved up closer to header */
+  bottom: 30px;
 }
 
+nav ul {
+  padding: 0;
+  list-style: none;
+}
 
+nav li a {
+  background-color: darkred;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+nav li a:hover {
+  background-color: red;
+  color: black;
+  box-shadow: 4px 4px 10px #999;
+}
+
+main img {
+  width: 80%;
+  top: 50px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 iframe {
-  grid-column: span 12;
-  grid-column-start: 3;
-  grid-column-end: 11;
-  align-content: center;
-  margin-top: 10px;
-  padding-top: 24px;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
   border: none;
 }
 
-footer a i {
-  float: right;
-  padding-right: 10px;
-  color: white;
-  margin-bottom: 20px;
-  padding-bottom: 50px;
-  font-size: 50px;
-  position: relative; bottom: 0px;
-}
-
 footer {
-grid-column: span 12;
-background-image: url(Footer.png);
-height: 247px;
-margin: 0;
-padding: 0;
-width: 1200px;
+  background-image: url(Footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Major Mono Display';
 }
 
 footer a {
-padding-left: 10px;
-font-size: 50px;
-font-family: 'Major Mono Display';
-color: white;
-margin-top: 300px;
-position: relative; top: 190px;
+  font-size: 2rem;
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem;
 }
 
-footer a:link{
-color: white;
-text-decoration: none;
-}
-
+footer a:link,
 footer a:visited {
-color: white;
+  color: white;
 }
+
+footer a:hover {
+  color: red;
+}
+
+footer a i {
+  font-size: 2.5rem;
+  color: white;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+/* RESPONSIVE LAYOUTS */
+
+/* At 480px and up */
+@media all and (min-width: 30rem) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* At 800px and up */
+@media all and (min-width: 50rem) {
+  #wrapper {
+    max-width: 960px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+  }
+
+  header {
+    grid-column: span 12;
+    height: 247px;
+  }
+
+  h1 {
+    grid-column: 2 / span 10;
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+
+  nav {
+    grid-column: 2 / span 4;
+    grid-template-columns: 1fr;
+    margin-top: 1rem; /* aligned with image */
+  }
+
+  #mainimg {
+    grid-column: 6 / span 6;
+    align-self: start;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  main {
+    grid-column: span 12;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  footer {
+    grid-column: span 12;
+    background-image: url(Footer.png);
+    background-color: #9f9f9f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: 'Major Mono Display';
+  }
+
+  footer a {
+    font-size: 2rem;
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+  }
+
+  footer a:hover {
+    color: red;
+  }
+
+  footer a i {
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
+}
+
