@@ -173,14 +173,12 @@ footer a i {
     margin-top: 1rem; /* aligned with image */
   }
 
-  #mainimg {
-    grid-column: 6 / span 6;
-    align-self: start;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
+p {
+  font-family: 'Jura';
+    font-size: 20px;
+    margin-left: 200px;
+    width: 600px;
+}
 
   main {
     grid-column: span 12;
