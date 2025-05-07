@@ -1,160 +1,154 @@
 body {
-    background-image: url(lowpoly-grey-gradient-vector.webp);
-  }
-  
-  #wrapper {
-    margin: 24px auto;
-    width: 1200px;
-    padding: 0px;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 24px;
-    }
-  /* style for dummy columns, delete and replace with your own CSS */
-  .dummycolumn {
-    background-color: rgba(255,0,0,.25);
-    grid-column: span 1;
-  }
-  
-  @font-face {
-    font-family: 'Major Mono Display';
-    src: url(MajorMonoDisplay-Regular.ttf);
-  }
-  
-  header {
-    grid-column: span 12;
-    background-image: url(Header.png);
-    background-repeat: no-repeat;
-    height: 247px;
-    width: 1200px;
-  }
-  
-  h1 {
-    grid-column-start: 2;
-    grid-column-end: 12;
-    text-align: center;
-    font-size: 96px;
-    padding-top: 50px;
-    text-decoration: none;
-  font-family: 'Major Mono Display';
-
-
-  }
-  
-  h1 a:link{
-    color: black;
-    text-decoration: none;
-  }
-  
-  h1 a:visited {
-    color: black;
-  }
-  
-  h1:after{
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 975px; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 5px solid black;
-  }
-  
-  nav {
-    align-items: center;
-    grid-row-gap: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      font-size: 60px;
-      padding-top: 75px;
-      font-family: 'Major Mono Display';
-      text-decoration: none;
-    }
-
-    nav i {
-        grid-column: span 2;
-        display: block;
-     font-size: 125px;
-    }
-    
-    nav li {
-      background-color: #747474;
-      color: white;
-      text-decoration: none;
-    }
-    
-    nav li a {
-      color: black;
-      display: block;
-      text-decoration: none;
-      padding: 25px;
-      height: 75px;
-      text-align: center;
-      margin-bottom: 15px;
-      grid-column: span 1;
-    }
-    
-    nav a {
-      display: block;
-margin-left: 90px;
-      width: 650px;
-      color: black;
-      text-decoration: none;
-      grid-column: span 1;
-  
-    }
-    
-    nav a:hover {
-      color: black;
-      text-decoration: none;
-    }
-
-    nav i {
-        text-decoration: none;
-        grid-column: span 1;
-        margin-left: 270px;
-    
-    }
-  
-    nav form {
-        margin-left: 90px;
-    }
-   
-    footer a i {
-        float: right;
-        padding-right: 10px;
-        color: white;
-        margin-bottom: 20px;
-        padding-bottom: 50px;
-        font-size: 50px;
-        position: relative; bottom: 0px;
-      }
-
-  footer {
-  grid-column: span 12;
-  background-image: url(Footer.png);
-  height: 247px;
+  background-image: url(lowpoly-grey-gradient-vector.webp);
   margin: 0;
   padding: 0;
-  width: 1200px;
-  }
-  
-  footer a {
-    padding-left: 10px;
-    font-size: 50px;
-    font-family: 'Major Mono Display';
-    color: white;
-    margin-top: 300px;
-position: relative; top: 190px;
-  }
-  
-  footer a:link{
+  font-size: 1rem;
+}
 
+#wrapper {
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #9f9f9f;
+  font-family: 'Major Mono Display';
+  color: white;
+}
+
+header {
+  background-image: url(Header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 247px;
+  grid-column: span 12;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 1rem;
+  font-family: 'Major Mono Display';
+}
+
+h1 a:link,
+h1 a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 1rem;
+  border-bottom: 3px solid black;
+}
+
+nav {
+  font-size: 3rem;
+  font-family: 'Major Mono Display';
+margin-top: -30px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+nav i {
+  font-size: 5rem;
+  margin-right: 10px;
+  color: black;
+  padding-left: 250px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+
+}
+
+nav a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+nav form {
+  margin-left: 10px;
+  color: black;
+  font-size: 4rem;
+  width: 600px;
+}
+
+nav form input,
+nav form textarea {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #424242;
+  color: rgb(255, 255, 255);
+  font-family: 'Jura';
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #616161;
+}
+
+@media all and (min-width: 50rem) {
+  #wrapper {
+      max-width: 1200px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 1rem;
+  }
+
+  nav {
+      grid-column: 2 / span 4;
+      grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-column: span 12;
+    background-image: url(Footer.png);
+    background-color: #9f9f9f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: 'Major Mono Display';
+  }
+
+  footer a {
+    font-size: 2rem;
     color: white;
+    margin: 0 0.5rem;
     text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
   }
-  
-  footer a:visited {
+
+  footer a:hover {
+    color: red;
+  }
+
+  footer a i {
+    font-size: 2.5rem;
     color: white;
+    padding: 0.5rem;
+    transition: color 0.3s;
   }
-  
+
+}
