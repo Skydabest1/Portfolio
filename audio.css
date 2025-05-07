@@ -1,16 +1,27 @@
 body {
-    background-image: url(lowpoly-grey-gradient-vector.webp);
-  }
-  
-  #wrapper {
-    margin: 24px auto;
-    width: 1200px;
-    padding: 0px;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 24px;
-    }
+  background-image: url(lowpoly-grey-gradient-vector.webp);
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #9f9f9f; /* Fallback color */
+  font-family: 'Major Mono Display';
+  color: white;
+}
+
+header {
+  background-image: url(Header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  grid-column: span 1;
+}
   /* style for dummy columns, delete and replace with your own CSS */
   .dummycolumn {
     background-color: rgba(255,0,0,.25);
@@ -22,40 +33,27 @@ body {
     src: url(MajorMonoDisplay-Regular.ttf);
   }
   
-  header {
-    grid-column: span 12;
-    background-image: url(Header.png);
-    background-repeat: no-repeat;
-    height: 247px;
-  }
   
   h1 {
-    grid-column-start: 2;
-    grid-column-end: 12;
     text-align: center;
-    font-size: 96px;
-    padding-top: 50px;
-    text-decoration: none;
-  font-family: 'Major Mono Display';
-  margin-bottom: 24px;
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-family: 'Major Mono Display';
   }
   
-  h1 a:link{
-    color: black;
-    text-decoration: none;
-  }
-  
+  h1 a:link,
   h1 a:visited {
     color: black;
+    text-decoration: none;
   }
   
-  h1:after{
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 975px; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 5px solid black;
+  h1:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 1rem;
+    border-bottom: 3px solid black;
   }
   
   h2 {
@@ -75,48 +73,112 @@ margin-top: 24px;
     margin-top: 69px;
   }
   
-  iframe {
-grid-column: span 1fr;
-display: block;
-margin: auto;
-padding-top: 48px;
-    border: none;
+  
+
+/* RESPONSIVE LAYOUTS */
+
+/* At 480px and up */
+@media all and (min-width: 30rem) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* At 800px and up */
+@media all and (min-width: 50rem) {
+  #wrapper {
+    max-width: 960px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+  }
+
+  header {
+    grid-column: span 12;
+    height: 247px;
+  }
+
+  h1 {
+    grid-column: 2 / span 10;
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
   }
   
-  footer a i {
-    float: right;
-    padding-right: 10px;
-    color: white;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
-    font-size: 50px;
-    position: relative; bottom: 0px;
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 
-footer {
-grid-column: span 12;
-background-image: url(Footer.png);
-height: 247px;
-margin: 0;
-padding: 0;
-width: 1200px;
+  nav {
+    grid-column: 2 / span 4;
+    grid-template-columns: 1fr;
+    margin-top: 1rem; /* aligned with image */
+  }
+
+p {
+  font-family: 'Jura';
+    font-size: 20px;
+    margin-left: 200px;
+    width: 600px;
 }
 
-footer a {
-padding-left: 10px;
-font-size: 50px;
-font-family: 'Major Mono Display';
-color: white;
-margin-top: 300px;
-position: relative; top: 190px;
-}
+  main {
+    grid-column: span 12;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 
-footer a:link{
 
-color: white;
-text-decoration: none;
-}
+  footer {
+    grid-column: span 12;
+    background-image: url(Footer.png);
+    background-color: #9f9f9f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: 'Major Mono Display';
+  }
 
-footer a:visited {
-color: white;
+  footer a {
+    font-size: 2rem;
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+  }
+
+  footer a:hover {
+    color: red;
+  }
+
+  footer a i {
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
 }

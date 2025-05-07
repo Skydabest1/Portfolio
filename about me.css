@@ -1,8 +1,6 @@
 /* MOBILE-FIRST BASELINE STYLES */
 body {
   background-image: url(lowpoly-grey-gradient-vector.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   font-size: 1rem;
@@ -173,12 +171,13 @@ footer a i {
     margin-top: 1rem; /* aligned with image */
   }
 
-p {
-  font-family: 'Jura';
+  p {
+    font-family: 'Jura';
     font-size: 20px;
-    margin-left: 200px;
-    width: 600px;
-}
+    grid-column: 6 / span 7; /* places it to the right of the carousel */
+    margin-left: 0;
+    width: 100%;
+  }
 
   main {
     grid-column: span 12;
