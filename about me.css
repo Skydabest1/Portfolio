@@ -149,7 +149,7 @@ footer a i {
 /* At 800px and up */
 @media all and (min-width: 50rem) {
   #wrapper {
-    max-width: 960px;
+    max-width: 1200px;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
   }
